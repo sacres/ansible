@@ -1,0 +1,4 @@
+---
+# defaults file for ntpd
+
+ntp_server: time.chu.nrc.ca

@@ -1,0 +1,18 @@
+---
+# tasks file for ntpd
+
+- name: Install ntp/ntpdate packages
+  yum: name={{ item }} state=present
+  with_items:
+    - ntp
+    - ntpdate
+
+- name: Enable/start ntpd
+  service: name=ntpd state=started enabled=true
+
+- name: Install ntp.conf template
+  template: src=ntp.conf.j2 dest=/etc/ntp.conf
+  notify: restart ntpd
+
+- name: Set date with ntpdate
+  command: ntpdate -qv {{ ntp_server }}
