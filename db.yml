@@ -1,0 +1,10 @@
+---
+
+ - hosts: all
+   tasks: []
+
+ - hosts: db
+   sudo: yes
+   
+   roles:
+     - pxc
