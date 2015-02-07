@@ -1,8 +1,10 @@
 ---
-# ntpd
 
  - hosts: all
+   tasks: []
+
+ - hosts: web
    sudo: yes
 
    roles:
-     - ntpd
+     - httpd
