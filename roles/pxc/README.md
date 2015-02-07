@@ -26,9 +26,9 @@ Apache 2.0
 Author Information
 ------------------
 
-Patrick "CaptTofu" Galbraith <patg@patg.net> Original 
-Steven Acres <steven@mcprohosting.com> Reworked
-Steven Acres <steven@swatteksystems.com> Revised
+- Patrick "CaptTofu" Galbraith <patg@patg.net> Original 
+- Steven Acres <steven@mcprohosting.com> Reworked
+- Steven Acres <steven@swatteksystems.com> Revised
 
 How do I use this?
 ------------------
