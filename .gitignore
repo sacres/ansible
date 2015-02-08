@@ -1,5 +1,8 @@
 .DS_Store
-
+id_rsa
+id_dsa
+.vagrant
+.vagrant.d
 roles/pcc/defaults/main.yml
 roles/haproxy-web/templates/haproxy.cfg.j2
 roles/haproxy-web/templates/railgun.conf.j2
