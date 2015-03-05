@@ -1,0 +1,7 @@
+---
+# Common role playbook
+- hosts: all
+  sudo: yes
+  roles:
+    - common
+    - ntpd
