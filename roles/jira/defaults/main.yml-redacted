@@ -1,0 +1,13 @@
+---
+# defaults file for jira
+
+server_name: jira.example.com
+
+mysql_conf:
+    dbusers:
+        root:
+            username: root
+            password:
+        jiradb:
+            username: jira
+            password:
