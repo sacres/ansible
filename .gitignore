@@ -3,6 +3,7 @@ id_rsa
 id_dsa
 .vagrant
 .vagrant.d
+roles-archive/
 roles/pcc/defaults/main.yml
 roles/haproxy-web/templates/haproxy.cfg.j2
 roles/haproxy-web/templates/railgun.conf.j2
