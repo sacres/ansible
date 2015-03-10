@@ -2,8 +2,10 @@ Ansible
 =======
 
 SwattekSystems Infrastructure Configuration Management with Ansible
-= RHEL/CentOS 7 roles =
 =======
+
+RHEL/CentOS 7 roles
+-------
 
 
 License
