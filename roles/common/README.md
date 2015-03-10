@@ -27,10 +27,12 @@ List of default variables available in the inventory:
 - ansible-playbook -i inventory/foo common.yml
 
 
+
 ### Authors and license
 
 `common` role was written by:
-- [Steven Acres](https://github.com/sacres/ansible) | [e-mail](mailto:steven@swatteksystems.com) | [Twitter](https://twitter.com/swamobil)License: [BSDv3](https://tldrlegal.com/license/bsd-3-clause-license-(revised))
+- [Steven Acres](https://github.com/sacres/ansible) | [e-mail](mailto:steven@swatteksystems.com) | [Twitter](https://twitter.com/swamobil)
+License: [BSDv3](https://tldrlegal.com/license/bsd-3-clause-license-(revised))
 
 ***
 

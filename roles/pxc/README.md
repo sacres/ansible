@@ -11,7 +11,7 @@ pxc -- build a galera/Percona-xtradb cluster
 List of default variables available in the inventory:
 
     ---
-
+pxc -- see main.yml-redacted in ./defaults
 
 ### Detailed usage guide
 
@@ -24,13 +24,15 @@ List of default variables available in the inventory:
 
 2. Copy ./defaults/main.yml-redacted to ./defaults/main.yml and amend vars
 
-3. Run your playbook: ansible-playbook -i inventory/db db.yml
+3. Run your playbook: ansible-playbook -i inventory/foo db.yml
+
 
 
 ### Authors and license
 
 `pxc` role was written by:
-- [Steven Acres](https://github.com/sacres/ansible) | [e-mail](mailto:steven@swatteksystems.com) | [Twitter](https://twitter.com/swamobil)License: [BSDv3](https://tldrlegal.com/license/bsd-3-clause-license-(revised))
+- [Steven Acres](https://github.com/sacres/ansible) | [e-mail](mailto:steven@swatteksystems.com) | [Twitter](https://twitter.com/swamobil)
+License: [BSDv3](https://tldrlegal.com/license/bsd-3-clause-license-(revised))
 
 ***
 

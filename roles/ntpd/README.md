@@ -2,7 +2,7 @@
 
 [![Travis CI](http://img.shields.io/travis/sacres/ansible/roles/ntpd.svg?style=flat)](http://travis-ci.org/sacres/ansible/roles/ntpd)  [![Platforms](http://img.shields.io/badge/platforms-el-lightgrey.svg?style=flat)](#)
 
-Install/configure ntpd service.
+Install/configure ntpd.
 
 
 
@@ -18,12 +18,13 @@ List of default variables available in the inventory:
 
 ### Detailed usage guide
 
-ansible-playbook -i inventory/foo ntpd.yml or include as a role in top level playbook
+ansible-playbook -i inventory/foo ntpd.yml or include in top-level playbook.
 
 ### Authors and license
 
 `ntpd` role was written by:
-- [Steven Acres](https://github.com/sacres/ansible) | [e-mail](mailto:steven@swatteksystems.com) | [Twitter](https://twitter.com/swamobil)License: [BSDv3](https://tldrlegal.com/license/bsd-3-clause-license-(revised))
+- [Steven Acres](https://github.com/sacres/ansible) | [e-mail](mailto:steven@swatteksystems.com) | [Twitter](https://twitter.com/swamobil)
+License: [BSDv3](https://tldrlegal.com/license/bsd-3-clause-license-(revised))
 
 ***
 
