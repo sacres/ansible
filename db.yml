@@ -5,6 +5,6 @@
 
  - hosts: db
    sudo: yes
-   
+
    roles:
      - pxc

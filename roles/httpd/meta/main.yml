@@ -1,0 +1,29 @@
+---
+
+dependencies: []
+
+galaxy_info:
+  author: 'Steven Acres'
+  description: 'httpd described in 1 sentence...'
+  company: 'SwattekSystems'
+  license: 'BSDv3'
+  min_ansible_version: '1.7.1'
+  platforms:
+    - name: EL
+      versions:
+        - 7
+  categories: [web]
+
+ansigenome_info:
+  galaxy_id: ''
+
+  travis: True
+
+  synopsis: |
+    httpd described in a few paragraphs....
+
+  usage: |
+    Describe how to use httpd...
+
+  #custom: |
+  #  Any custom output you want after the usage section...

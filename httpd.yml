@@ -1,0 +1,10 @@
+---
+
+ - hosts: all
+   tasks: []
+
+ - hosts: web
+   sudo: yes
+
+   roles:
+     - httpd

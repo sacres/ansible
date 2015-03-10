@@ -1,0 +1,14 @@
+---
+# tasks file for httpd
+
+ - name: Install apache httpd
+   yum: name=httpd state=present
+
+ - name: Install httpd.conf template
+   template: src=httpd.conf.j2 dest=/etc/httpd/conf/httpd.conf owner=root group=root mode=644
+
+ - name: Install welcome.conf template
+   template: src=welcome.conf.j2 dest=/etc/httpd/conf.d/welcome.conf owner=root group=root mode=644
+
+ - name: Enable httpd
+   service: name=httpd state=started enabled=true

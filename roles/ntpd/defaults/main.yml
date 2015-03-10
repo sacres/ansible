@@ -1,0 +1,4 @@
+---
+# defaults file for ntpd
+# Enter the ntp server below
+ntp_server: []

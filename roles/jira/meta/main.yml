@@ -1,0 +1,29 @@
+---
+
+dependencies: []
+
+galaxy_info:
+  author: 'Steven Acres'
+  description: 'jira described in 1 sentence...'
+  company: 'SwattekSystems'
+  license: 'BSDv3'
+  min_ansible_version: '1.7.1'
+  platforms:
+    - name: EL
+      versions:
+        - 7
+  categories: [development,web]
+
+ansigenome_info:
+  galaxy_id: ''
+
+  travis: True
+
+  synopsis: |
+    jira described in a few paragraphs....
+
+  usage: |
+    Describe how to use jira...
+
+  #custom: |
+  #  Any custom output you want after the usage section...

@@ -17,7 +17,7 @@ symbolic-links                  = 0
 
 # WSREP (GALERA) #
 wsrep_provider                  = /usr/lib64/libgalera_smm.so
-wsrep_cluster_name              = {{ clustername }}"
+wsrep_cluster_name              = "{{ clustername }}"
 wsrep_cluster_address           = gcomm://{% for host in groups['db'] %}{% if not loop.last %}{{ hostvars[host]['facter_ipaddress'] }},{% else %}{{ hostvars[host]['facter_ipaddress'] }}{% endif %}{% endfor %}
 
 wsrep_node_address              = {{ facter_ipaddress }}
