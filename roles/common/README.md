@@ -15,10 +15,11 @@ List of default variables available in the inventory:
 
     inv_hosts: 'inventory/hosts'
 
+    ansible_user: []
 
 ### Detailed usage guide
 
-- 'ansible' with this role and most others in this repo refers to the 'mgmt' box/group as well as the designated user for ansible mgmt.
+- 'ansible' with this role and most others in this repo refers to the 'mgmt' box/group as well as the designated user for ansible mgmt, define the user in ./defaults/main.yml: ansible_user: ..
 
 - Add pub keys for ansible/root into ./files/{root,ansible}-authorized_keys
 

@@ -98,7 +98,7 @@ Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
 root	ALL=(ALL) 	ALL
 
 # Allow ansible all, no passwd
-ansible	ALL=(ALL)	NOPASSWD: ALL
+{{ ansible_user }}	ALL=(ALL)	NOPASSWD: ALL
 
 ## Allows members of the 'sys' group to run networking, software,
 ## service management apps and more.

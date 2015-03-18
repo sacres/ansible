@@ -15,7 +15,7 @@
   - name: Ensure buggy yum fastest-mirror plugin is *disabled*
     lineinfile: dest=/etc/yum/pluginconf.d/fastestmirror.conf regexp=enabled= line=enabled=0
 # amend below to include 'common' pkgs for all boxen
-  - name: Install ansible, git, lsof, nc, bind-utils, iptables-services
+  - name: Install git, lsof, nc, bind-utils, iptables-services
     yum: name={{ item }} state=present
     with_items:
       - "nc"
@@ -34,13 +34,13 @@
     template: src=sudoers.j2 dest=/etc/sudoers owner=root group=root mode=440
 
   - name: Ensure ansible user created
-    user: name=ansible groups=wheel append=yes
+    user: name={{ ansible_user }} groups=wheel append=yes
 
   - name: Ensure ansible's ~/.ssh dir exists
-    file: path=/home/ansible/.ssh state=directory owner=ansible group=ansible mode=700
+    file: path=/home/{{ ansible_user }}/.ssh state=directory owner={{ ansible_user }} group={{ ansible_user }} mode=700
 
   - name: Add authorized_keys for ansible, all hosts
-    authorized_key: user=ansible key="{{ lookup('file', '/home/ansible/.ssh/id_rsa.pub') }}"
+    authorized_key: user={{ ansible_user }} key="{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
 
   - name: audit template
     template: src=audit.rules.j2 dest=/etc/audit/rules.d/audit.rules.j2 owner=root group=root mode=640

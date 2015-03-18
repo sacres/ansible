@@ -3,3 +3,4 @@
 
 inv_hosts: 'inventory/hosts'
 
+ansible_user: []
